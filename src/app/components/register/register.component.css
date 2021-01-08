@@ -1,0 +1,13 @@
+.card{
+    margin: 0 auto;
+    width:800px;
+    box-shadow: 8px 8px 12px #aaa;
+}
+.card-body{
+    margin: 0 auto;
+    width:700px;
+    text-align:center;
+}
+form{
+    margin:0 auto;
+}

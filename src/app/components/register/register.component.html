@@ -1,0 +1,100 @@
+<div class="container">
+    
+    <div class="card">
+        <div class="card-body">
+            <div>
+                <h2>S'inscrire</h2>
+                <h4>C'est rapide et facile</h4>
+            </div>
+            <hr>
+            <form  #form="ngForm" (ngSubmit)="register(form)">
+            <div class="form-row justify-content-around">
+                
+                    <div class="col mb-3">
+                    <input type="text" class="form-control" ngModel placeholder="Nom">
+                    </div>
+                
+               
+                    <div class="col mb-3">
+                    <input type="text" class="form-control" ngModel placeholder="Prénom">
+                    </div>
+                
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-sm-8">
+                    <div class="input-group mb-3 ">
+                    <input type="email" class="form-control" ngModel id="exampleInputEmail1" placeholder="Numéro mobile ou Email">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-sm-8">
+                    <div class="input-group mb-3 ">
+                    <input type="password" class="form-control" ngModel id="exampleInputPassword1" placeholder="Nouveau mot de passe">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-around">   
+                <div class="col-sm-4">
+                    <label for="date">Date de naissance</label>
+                    <div class="input-group mb-3">  
+                    <input type="date" class="form-control" ngModel id="date" placeholder="1">
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" row justify-content-around mb-3">
+                <div class="row">
+                <div class="row input-group ">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                      </div>
+                    </div>
+
+                    <input type="text" class="form-control" placeholder="Femme">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Homme">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Personalisé">
+                </div>
+      
+                  
+                </div>
+               
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-sm-9">
+                    <p class="text-justify">En cliquant sur S’inscrire, vous acceptez nos <a href="">Conditions générales</a>.
+                        Découvrez comment nous recueillons, utilisons et partageons vos données en 
+                        lisant notre <a href="">Politique d’utilisation des données</a> et comment nous utilisons les cookies et autres technologies 
+                        similaires en consultant notre <a href="">Politique d’utilisation des cookies</a>. 
+                        Vous recevrez peut-être des notifications par texto de notre part et vous pouvez à tout moment vous désabonner.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-sm-offset-3 col-sm-2">
+
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" >S'inscrire</button>
+        </form>
+    </div>
+    </div>
+</div>
+
+
+
+
+

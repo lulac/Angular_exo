@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row mb-2">
+        <div class="col-md-4">
+            <img src="/assets/Mona_Lisa-restored.jpg" class="rounded float-start" alt="">
+        </div>
+        <div class="col-md-6 offset-md3 mt-5 text-center">
+            <div class="card">
+                <div class="card-body">
+                    <form #form="ngForm" (ngSubmit)="login(form)">
+                        <div class="input-group mb-3">
+                        <input class="form-control" ngModel type="email" placeholder="Email">
+                        </div>
+                        <div class="input-group mb-3">
+                        <input class="form-control" type="password" ngModel placeholder="Mot de passe">
+                        </div>
+                        <button type="submit" class="btn btn-primary" [disabled]="form.invalid || form.pending">Connexion</button>
+                    </form>
+                   
+                    <a class="text-center" href="">Mot de passe oublié ?</a>
+                    
+                    <hr>
+                    <div class="signin">
+                        <button type="button" class="btn btn-success" routerLink="register">Créer un compte</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="header">
+        <div class="header__left mb-3">
+            <img src="" alt="">
+            <div class="input">
+                <!--search bar-->
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+        <div class="home-header-left"></div>
+        <div class="home-header-right">
+            <div>
+                <img src="/assets/fb.jpg" alt="">
+                <span class="name">Lulac</span>
+            </div>
+        </div>
+        <h3>Post</h3>
+        <div class="post" *ngFor="let post of posts">
+            <div class="media">
+                <div class="media-body border-top mb-3">
+                  <h5 class="mt-0 mb-1">{{post.ownerName}}</h5>
+                  <p>{{post.content}}</p>
+                  <p class="mb-0">{{post.time}}</p>
+                </div>
+              </div>
+        </div>
+
+
+    </div>
+</div>
